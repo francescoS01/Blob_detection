@@ -93,7 +93,7 @@ def filter_max_points(punti_massimi):
             points_distance = np.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
             min_dist = min(sigma1,sigma2)
                 
-            if points_distance < min_dist:
+            if points_distance < 2*min_dist:
                 trovato = True
                 # Se il valore del punto corrente è maggiore, sostituisci il punto precedente
                 if value1 > value2:
@@ -209,7 +209,7 @@ num_max = 100 # number of maximum points that will be taken for every sigma
 blob_detection(sigmas, image_path, num_max)
 
 """
-sigmas = [1, 2, 4, 8, 16, 32]
+sigmas = [2, 4, 8, 16, 32]
 image_path = "image/horse024.png"
 image_name = "horse024.png"
 num_max = 400
@@ -219,3 +219,4 @@ blob_detection(sigmas, image_path, num_max, image_name)
 
 # uno buono = 400
 # da tenere abbiamo 17 - 21 - 24 - 43 
+#prova
