@@ -65,7 +65,7 @@ num_max = 100 # number of maximum points that will be taken for every sigma
 
 blob_detection(sigmas, image_path, num_max)
 
-"""
+
 
 sigmas = [2, 4, 8, 16, 32]
 image_path = "image/horse024.png"
@@ -78,3 +78,13 @@ blob_detection(sigmas, image_path, num_max, image_name)
 # uno buono = 400
 # da tenere abbiamo 17 - 21 - 24 - 43 
 #prova
+"""
+
+"""
+sigmas = [1, 2, 4, 8, 16, 32]
+image_path = "horse160.png"
+num_max = 100 # number of maximum points that will be taken for every sigma
+
+blob_detection(sigmas, image_path, num_max)
+
+"""
